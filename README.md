@@ -27,6 +27,8 @@ npm install
 npm start
 ```
 
+### App
+
 acessar url http://localhost:3000
 
 Você terá acesso a seguinte tela (Poderá informar qualquer e-mail.):
