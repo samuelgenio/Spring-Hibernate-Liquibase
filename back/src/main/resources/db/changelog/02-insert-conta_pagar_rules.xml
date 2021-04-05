@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">    
+    <changeSet  author="liquibase"  id="02">
+        <insert tableName="conta_pagar_rules">
+            <column name="qtd_dias" value="0"/>
+            <column name="per_multa" value="2"/>
+            <column name="per_juros_dias" value="0.1"/>
+        </insert>
+
+        <insert tableName="conta_pagar_rules">
+            <column name="qtd_dias" value="4"/>
+            <column name="per_multa" value="3"/>
+            <column name="per_juros_dias" value="0.2"/>
+        </insert>
+
+        <insert tableName="conta_pagar_rules">
+            <column name="qtd_dias" value="6"/>
+            <column name="per_multa" value="5"/>
+            <column name="per_juros_dias" value="0.4"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

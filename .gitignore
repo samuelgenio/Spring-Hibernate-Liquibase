@@ -1,0 +1,18 @@
+######
+#BACK#
+######
+# ignore todos os arquivos no diretório target/
+back/target/
+back/nbactions.xml
+back/.mvn
+
+#######
+#FRONT#
+#######
+front/.vscode
+front/node_modules/
+front/package-lock.json
+##########
+#DATABASE#
+##########
+database/mysql/

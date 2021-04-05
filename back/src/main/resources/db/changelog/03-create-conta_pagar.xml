@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="03" author="liquibase">
+
+        <createTable tableName="conta_pagar">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="email" type="varchar(60)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="nome" type="varchar(60)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="vlr_original" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dat_vencimento" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dat_pagamento" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="qtd_dias_atrado" type="int">
+                <constraints />
+            </column>
+            <column name="per_multa" type="double">
+                <constraints />
+            </column>
+            <column name="per_juros_dias" type="double">
+                <constraints />
+            </column>
+            <column name="vlr_corrigido" type="double">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>
