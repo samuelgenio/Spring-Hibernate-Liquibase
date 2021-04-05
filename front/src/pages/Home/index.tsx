@@ -40,7 +40,7 @@ const Home = () => {
                             onSubmit={handleOnsubmit}
                         >
                             <h1>
-                                Minhas Contas
+                                Minhas Despesas
                             </h1>
                             <div className="field-group">
                                 <div className="field">
